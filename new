@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Joshua Gonzales <jfmgonzales@outlook.com>
+# 
+# For use with jjfmg/devbox
+
+docker run -it \
+  -h ${1:-devbox} \
+  --name ${1:-devbox} \
+  --rm \
+  -v "/var/run/docker.sock:/var/run/docker.sock" \
+  -v "/data:/root/data" \
+  -v "/shared:/root/shared" \
+  -v "/projects:/root/projects" \
+  jjfmg/dbox:latest
