@@ -12,4 +12,4 @@ docker run -it \
   -v "/data:/root/data" \
   -v "/shared:/root/shared" \
   -v "/projects:/root/projects" \
-  jjfmg/dbox:latest
+  jjfmg/devbox:latest
